@@ -1,7 +1,7 @@
 const request = require('request');
 
 const fetchBreedDescription = (breed, callback) => {
-  request('https://api.thecaapi.com/v1/breeds/search?q=' + breed, (err, response, body) => {
+  request('https://api.thecatapi.com/v1/breeds/search?q=' + breed, (err, response, body) => {
     if (err) {
       callback(err);
     } else {
